@@ -14,7 +14,7 @@ from honcho.printer import Printer
 from honcho.process import Popen
 
 if sys.version_info < (3, 10):
-    from backports.entry_points_selectable import entry_points
+    from honcho.backports.entry_points_selectable import entry_points
 else:
     from importlib.metadata import entry_points
 
